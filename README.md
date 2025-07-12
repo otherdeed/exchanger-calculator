@@ -27,4 +27,5 @@ make dev
 ```bash
 make prod-down
 ```
+##### ```40273``` - Порт nuxt-приложения
 

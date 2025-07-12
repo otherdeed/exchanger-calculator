@@ -1,0 +1,53 @@
+# Docker
+docker-compose.override.yml
+.env
+*.env.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp*
+.pnp.js
+
+# Логи и временные файлы
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Тесты и покрытие
+coverage/
+.nyc_output/
+
+# Библиотеки и зависимости
+jspm_packages/
+web_modules/
+
+# Сборки и артефакты
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Кэш
+.cache/
+.turbo/
+
+# Системные файлы
+Thumbs.db
+ehthumbs.db
+Desktop.ini
