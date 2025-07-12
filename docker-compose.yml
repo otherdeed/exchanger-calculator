@@ -1,0 +1,25 @@
+name: crypto-exchanger
+services:
+  frontend:
+    container_name: crypto-exchanger-nuxt
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        YARN_INSTALL_PARAMS: --legacy-peer-deps --frozen-lockfile --silent --immutable-cache --check-cache
+    env_file:
+      - src/.env
+    ports:
+      - '127.0.0.1:${PORT}:3000'
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: 1
+    deploy:
+      resources:
+        limits:
+          memory: 300m
+        reservations:
+          memory: 100m

@@ -1,0 +1,31 @@
+@use '_fonts';
+@use '_vars';
+
+body {
+  font-family: $ff_main_bold, sans-serif;
+  background-color: black;
+  color: $txt_main;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+input {
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

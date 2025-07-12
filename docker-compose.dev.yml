@@ -1,0 +1,13 @@
+name: crypto-exchanger
+services:
+  frontend:
+    container_name: crypto-exchanger-nuxt
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - '127.0.0.1:${PORT}:3000'
+      - "24273:24678"
+    volumes:
+      - ./src:/src
+    command: yarn dev

@@ -1,0 +1,16 @@
+@use './_vars.scss' as *;
+
+@mixin gilroy-bold ($size, $color, $height, $weight) {
+  font-family: $ff_main_bold;
+  font-size: $size;
+  color: $color;
+  line-height: $height; 
+  font-weight: $weight;
+}
+@mixin gilroy-light ($size, $color, $height, $weight) {
+  font-family: $ff_main_light;
+  font-size: $size;
+  color: $color;
+  line-height: $height; 
+  font-weight: $weight;
+}
